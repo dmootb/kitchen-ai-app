@@ -24,4 +24,9 @@ Make sure you have the following installed:
 git clone https://github.com/your-username/kitchen-ai-app.git
 cd kitchen-ai-app/frontend
 
+## 2. Install JS Dependencies
 
+```bash
+yarn install
+# or
+npm install
