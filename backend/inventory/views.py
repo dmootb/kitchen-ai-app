@@ -7,3 +7,5 @@ class InventoryViewSet(ModelViewSet):
     def list() -> None:
         pass
     
+    
+    
