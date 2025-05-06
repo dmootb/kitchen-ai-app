@@ -1,11 +1,13 @@
+// src/screens/HomeScreen.tsx
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import BottomNavBar from '../components/BottomNavBar';
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Welcome to the Home Screen!</Text>
-      <Button title="Go to Profile" onPress={() => navigation.navigate('Profile')} />
+      <Text style={styles.text}>Welcome to the Home Screen!</Text>
+      <BottomNavBar />
     </View>
   );
 };
@@ -13,8 +15,12 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#f5f5f5',
+  },
+  text: {
+    fontSize: 20,
+    margin: 20,
   },
 });
 
